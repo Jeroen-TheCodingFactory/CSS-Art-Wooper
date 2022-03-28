@@ -6,6 +6,7 @@
 
 :root {
     --wooper-blue: hsl(197, 59%, 80%);
+    --wooper-pink: rgb(199, 158, 185);
 }
 
 html {
@@ -92,19 +93,11 @@ body {
 .wooper__ear {
     width: 12rem;
     height: 2rem;
-    background: rgb(199, 158, 185);
+    background: var(--wooper-pink);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
-}
-
-.wooper__ear--left {
-    left: -32%;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-    box-shadow: inset -1rem -0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.3);
-
 }
 
 .wooper__ear--right {
@@ -116,96 +109,92 @@ body {
 }
 
 .wooper__point {
-    background: rgb(199, 158, 185);
+    background: var(--wooper-pink);
     position: absolute;
+    width: 9rem;
+    height: 2rem;
     z-index: -2;
 }
 
+.wooper__ear--left {
+    left: -32%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    box-shadow: inset -1rem -0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.3);
+}
+
+/* left pointy things, top*/
+.wooper__point--left--top {
+    box-shadow: inset -1rem -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+
+}
+
 .wooper__point--first {
-    box-shadow: inset 0 -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
     transform: rotate(65deg);
     left: -22%;
     top: 34%;
-    width: 9rem;
-    height: 2rem;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-}
-
-.wooper__point--third {
-    box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-    transform: rotate(-65deg);
-    left: -23%;
-    top: 62%;
-    width: 9rem;
-    height: 2rem;
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-}
-
-.wooper__point--fifth {
-    box-shadow: inset 0 -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-    transform: rotate(-65deg);
-    right: -22%;
-    top: 34%;
-    width: 9rem;
-    height: 2rem;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
 }
 
 .wooper__point--second {
     left: -34%;
     top: 38%;
-    width: 9rem;
-    height: 2rem;
     transform: rotate(65deg) scale(0.6);
-    box-shadow: inset 0 -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+}
+
+/* left pointy things bottom */
+.wooper__point--left--bottom {
+    box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+}
+
+.wooper__point--third {
+    left: -23%;
+    top: 62%;
+    transform: rotate(-65deg);
 }
 
 .wooper__point--fourth {
     left: -34%;
     top: 56%;
-    width: 9rem;
-    height: 2rem;
     transform: rotate(-65deg) scale(0.6);
-    box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
+}
+
+/* right pointy things top */
+.wooper__point--right--top {
+    box-shadow: inset 1rem -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.wooper__point--fifth {
+    right: -22%;
+    top: 34%;
+    transform: rotate(-65deg);
 }
 
 .wooper__point--sixth {
     right: -34%;
     top: 38%;
-    width: 9rem;
-    height: 2rem;
     transform: rotate(-65deg) scale(0.6);
-    box-shadow: inset 0 -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
+}
+
+.wooper__point--right--bottom {
+    box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
 
-
 .wooper__point--seven {
-    box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-    transform: rotate(65deg);
     right: -23%;
     top: 63%;
-    width: 9rem;
-    height: 2rem;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
+    transform: rotate(65deg);
 }
 
 .wooper__point--eight {
     right: -34%;
     top: 56%;
-    width: 9rem;
-    height: 2rem;
     transform: rotate(65deg) scale(0.6);
-    box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
 }
