@@ -26,6 +26,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 4rem;
+    animation-name: a-popup;
+    animation-duration: 1.4s;
 }
 
 .wooper__head {
@@ -197,4 +199,28 @@ body {
     right: -34%;
     top: 56%;
     transform: rotate(65deg) scale(0.6);
+}
+
+@keyframes a-popup {
+    from{
+        transform:translateY(5rem);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@media screen and (max-width: 50rem) {
+    .wooper {
+        transform: scale(0.7);
+        animation-name:"";
+    }
+}
+
+@media screen and (max-width: 31.25rem) {
+    .wooper {
+        transform: scale(0.5);
+    }
 }
