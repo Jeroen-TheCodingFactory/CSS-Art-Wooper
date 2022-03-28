@@ -6,6 +6,7 @@
 
 :root {
     --wooper-blue: hsl(197, 59%, 80%);
+    --wooper-pink: rgb(199, 158, 185);
 }
 
 html {
@@ -92,7 +93,7 @@ body {
 .wooper__ear {
     width: 12rem;
     height: 2rem;
-    background: rgb(199, 158, 185);
+    background: var(--wooper-pink);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -110,8 +111,10 @@ body {
 }
 
 .wooper__point {
-    background: rgb(199, 158, 185);
+    background: var(--wooper-pink);
     position: absolute;
+    width: 9rem;
+    height: 2rem;
     z-index: -2;
 }
 
@@ -123,34 +126,32 @@ body {
 }
 
 /* left pointy things, top*/
-.wooper__point--left--top{
+.wooper__point--left--top {
     box-shadow: inset 0 -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    width: 9rem;
-    height: 2rem;
+
 }
 
-.wooper__point--first{
+.wooper__point--first {
     transform: rotate(65deg);
     left: -22%;
     top: 34%;
 }
 
-.wooper__point--second{
+.wooper__point--second {
     left: -34%;
     top: 38%;
     transform: rotate(65deg) scale(0.6);
 }
 
 /* left pointy things bottom */
-.wooper__point--left--bottom{
+.wooper__point--left--bottom {
     box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    width: 9rem;
-    height: 2rem;
 }
+
 .wooper__point--third {
     left: -23%;
     top: 62%;
@@ -164,13 +165,12 @@ body {
 }
 
 /* right pointy things top */
-.wooper__point--right--top{
+.wooper__point--right--top {
     box-shadow: inset 0 -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-    width: 9rem;
-    height: 2rem;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
+
 .wooper__point--fifth {
     right: -22%;
     top: 34%;
@@ -183,13 +183,12 @@ body {
     transform: rotate(-65deg) scale(0.6);
 }
 
-.wooper__point--right--bottom{
+.wooper__point--right--bottom {
     box-shadow: inset 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
-    width: 9rem;
-    height: 2rem; 
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
+
 .wooper__point--seven {
     right: -23%;
     top: 63%;
