@@ -198,3 +198,15 @@ body {
     top: 56%;
     transform: rotate(65deg) scale(0.6);
 }
+
+@media screen and (max-width: 50rem) {
+ .wooper{
+     transform:scale(0.7);
+ }    
+}
+
+@media screen and (max-width: 31.25rem) {
+    .wooper{
+        transform:scale(0.5);
+    }    
+   }
