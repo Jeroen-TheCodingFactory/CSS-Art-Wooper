@@ -97,19 +97,22 @@ body {
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
-    box-shadow: inset 0 -0.5rem 0.5rem 0 rgba(0, 0, 0, 0.3);
 }
 
 .wooper__ear--left {
     left: -32%;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    box-shadow: inset -1rem -0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.3);
+
 }
 
 .wooper__ear--right {
     right: -32%;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+    box-shadow: inset 1rem -0.5rem 0.5rem 0.2rem rgba(0, 0, 0, 0.3);
+
 }
 
 .wooper__point {
